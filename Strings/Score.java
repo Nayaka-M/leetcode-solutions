@@ -1,0 +1,12 @@
+// LeetCode Problem: Score of a String
+// Language: Java
+
+class Score {
+    public int scoreOfString(String s) {
+        int res = 0;
+        for (int i = 0; i < s.length() - 1; i++) {
+            res += Math.abs(s.charAt(i) - s.charAt(i + 1));
+        }
+        return res;
+    }
+}
