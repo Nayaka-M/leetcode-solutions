@@ -1,0 +1,25 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        HashSet<Integer> set=new HashSet<>();
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            set.add(arr[i]);
+        }
+        int m=sc.nextInt();
+        int arr1[]=new int[m];
+        for(int i=0;i<m;i++)
+        {
+            arr1[i]=sc.nextInt();
+            set.add(arr1[i]);
+        }
+        //Arrays.sort(set);
+        System.out.print(set);
+    }
+}
