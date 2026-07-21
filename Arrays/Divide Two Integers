@@ -1,0 +1,15 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int dive=sc.nextInt();
+        int divi=sc.nextInt();
+        if(dive!=0)
+        {
+            int d=dive/divi;
+            System.out.print(Math.round(d));
+        }
+    }
+}
