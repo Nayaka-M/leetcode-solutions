@@ -1,0 +1,30 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        int  i1=1352;
+        int  i2=2543;
+        int  i3=3521;
+        int  i4=38;
+         int[] arr={i1,i2,i3};
+         int sum=0;
+         if(i4%2==0)
+         {
+             for(int num:arr)
+             {
+                 while(num>0)
+                 {
+                     int digit=num%10;
+                    if(digit%2==0)
+                    {
+                       sum+=digit; 
+                    }
+                 num= num/10;
+                 }
+                // num= num/10;
+             }
+         }
+         System.out.print(sum);
+    }
+}
