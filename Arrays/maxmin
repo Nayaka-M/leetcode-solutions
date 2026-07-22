@@ -1,0 +1,43 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int min1=9;
+        int max=0;
+        int min2=9;
+        int i1=3521;
+        int i2=2452;
+        int i3=1352;
+        int i4=38;
+      while(i1>0)
+      {
+          int digit=i1%10;
+          if(digit<min1)
+          {
+              min1=digit;
+          }
+          i1=i1/10;
+      }
+      while(i2>0)
+      {
+          int digit=i2%10;
+          if(digit>max)
+          {
+              max=digit;
+          }
+          i2=i2/10;
+    }
+    while(i3>0)
+      {
+          int digit=i3%10;
+          if(digit<min2)
+          {
+              min2=digit;
+          }
+          i3=i3/10;
+      }
+      System.out.print((min1*max*min2)-i4);
+    }
+}
