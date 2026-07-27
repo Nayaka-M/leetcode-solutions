@@ -1,0 +1,24 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        int num=12345;
+        int e_count=0;
+        int o_count=0;
+        while(num>0)
+        {
+            int digit=num%10;
+            if(digit%2==0)
+            {
+                e_count++;
+            }
+            else{
+                o_count++;
+            }
+            num=num/10;
+        }
+             System.out.println(e_count);
+             System.out.println(o_count);
+    }
+}
