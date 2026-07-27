@@ -1,0 +1,21 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        int n=1053;
+        while(n>0)
+        {
+            int digit=n%10;
+             n=n/10;
+            if(digit==0)
+            {
+                System.out.print("duck num");
+                return;
+            }
+            n=n/10;
+        }
+        System.out.print("not duck num");
+    }
+}
+          
