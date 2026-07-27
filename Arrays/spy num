@@ -1,0 +1,30 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+       int n=6;
+       int sum=0;
+       int product=1;
+      for(int i=0;i<n;i++)
+      {
+          while(n>0)
+          {
+             int digit=n%10;
+             sum=sum+digit;
+             product=product*digit;
+             n=n/10;
+          }
+          if(product==sum)
+          {
+              System.out.print("spy num");
+          }
+          else
+          {
+              System.out.print("not");
+          }
+      }
+    }
+}
+    
+     
