@@ -1,0 +1,23 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+       int n=9;
+       int product=n*n;
+       int sum=0;
+       while(product>0)
+       {
+           int digit=product%10;
+           sum=sum+digit;
+           product=product/10;
+       }
+       if(sum==n)
+       {
+           System.out.print("neon");
+       }
+       else{
+           System.out.print("not");
+       }
+    }
+}
