@@ -1,0 +1,26 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        int a=126;
+        int rev=0;
+        int num=a;
+        int sum=0;
+        while(a>0)
+        {
+          int rem=a%10;
+           sum=sum+(rem*rem*rem);
+           a=a/10;
+        }
+          if(num==sum)
+          {
+              System.out.print("arms");
+          }
+          else
+          {
+              System.out.print("not");
+              return;
+          }
+    }
+}
