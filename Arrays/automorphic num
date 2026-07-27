@@ -1,0 +1,23 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+       int n=24;
+       int digit=0;
+       while(n>0)
+       {
+           int y=n*n;
+            digit=y%100;
+       if(digit==n)
+       {
+           System.out.print("Automorphic");
+           return;
+       }
+       else{
+           System.out.print("not");
+           return;
+       }
+       }
+    }
+}
