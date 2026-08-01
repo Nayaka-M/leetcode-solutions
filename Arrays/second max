@@ -1,0 +1,27 @@
+import java.util.*;
+class Main 
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int max=Integer.MIN_VALUE;
+        int second=Integer.MIN_VALUE;
+        while(n>0)
+        {
+            int digit=n%10;
+            if(digit>max)
+            {
+                second=max;
+                max=digit;
+            }
+            else if(digit>second&& digit!=max)
+            {
+                second=digit;
+            }
+            n=n/10;
+            
+        }
+        System.out.print(second);
+    }
+}
